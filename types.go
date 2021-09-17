@@ -9,6 +9,7 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
+	ethermint "github.com/tharsis/ethermint/types"
 	evidencetypes "github.com/cosmos/cosmos-sdk/x/evidence/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
@@ -28,6 +29,7 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	banktypes.RegisterInterfaces(interfaceRegistry)
 	crisistypes.RegisterInterfaces(interfaceRegistry)
 	distributiontypes.RegisterInterfaces(interfaceRegistry)
+	ethermint.RegisterInterfaces(interfaceRegistry)
 	evidencetypes.RegisterInterfaces(interfaceRegistry)
 	govtypes.RegisterInterfaces(interfaceRegistry)
 	proposal.RegisterInterfaces(interfaceRegistry)
