@@ -7,6 +7,8 @@ require (
 	github.com/cosmos/cosmos-sdk v0.44.0
 	github.com/cosmos/ibc-go v1.2.0
 	github.com/crypto-org-chain/chain-main/v3 v3.0.0-croeseid
+	github.com/crypto-org-chain/cronos v0.0.0-20210918131536-a3b982902264
+	github.com/peggyjv/gravity-bridge/module v0.2.0
 	github.com/stretchr/testify v1.7.0
 	github.com/tharsis/ethermint v0.4.2-0.20210915094503-116de5461766
 	github.com/thatisuday/commando v1.0.4
