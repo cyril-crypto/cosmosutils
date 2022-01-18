@@ -63,6 +63,19 @@ func TestDecodeDirectSignedTx(t *testing.T) {
     assert.Equal(t, expected, string(actual))
 }
 
+func TestDecodeDirectSignedEthermintTx(t *testing.T) {
+    anyDirectSignedTx := "CokBCoYBChwvY29zbW9zLmJhbmsudjFiZXRhMS5Nc2dTZW5kEmYKKmV0aDFxNm1meHIydGgwMDQ1NjY5ZXZ1a3k3enR6azAzMzlzcDA3cjY5eBIqZXRoMXE2bWZ4cjJ0aDAwNDU2NjlldnVreTd6dHprMDMzOXNwMDdyNjl4GgwKBXN0YWtlEgMxMDASrwEKVwpPCigvZXRoZXJtaW50LmNyeXB0by52MS5ldGhzZWNwMjU2azEuUHViS2V5EiMKIQP1JPeLIYCqftFicq5d01/wsBRfBX/7zr5J2FLFzBUxNxIECgIIARJUCk4KRGliYy82QjVBNjY0QkYwQUY0RjcxQjJGMEJBQTMzMTQxRTJGMTMyMTI0MkZCRDVEMTk3NjJGNTQxRUM5NzFBQ0IwODY1EgYyMDAwMDAQwJoMGkF06dsyVQtVOyciSHdCUTJydzTRhn7r9jaiyFHmDSzm9yHmExrJ9vfmSFJN0owQOHhBlwrXFdCKO+pNXYduWzq3AQ=="
+    expected := "{\"body\":{\"messages\":[{\"@type\":\"/cosmos.bank.v1beta1.MsgSend\",\"from_address\":\"eth1q6mfxr2th0045669evuky7ztzk0339sp07r69x\",\"to_address\":\"eth1q6mfxr2th0045669evuky7ztzk0339sp07r69x\",\"amount\":[{\"denom\":\"stake\",\"amount\":\"100\"}]}],\"memo\":\"\",\"timeout_height\":\"0\",\"extension_options\":[],\"non_critical_extension_options\":[]},\"auth_info\":{\"signer_infos\":[{\"public_key\":{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"A/Uk94shgKp+0WJyrl3TX/CwFF8Ff/vOvknYUsXMFTE3\"},\"mode_info\":{\"single\":{\"mode\":\"SIGN_MODE_DIRECT\"}},\"sequence\":\"0\"}],\"fee\":{\"amount\":[{\"denom\":\"ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865\",\"amount\":\"200000\"}],\"gas_limit\":\"200000\",\"payer\":\"\",\"granter\":\"\"}},\"signatures\":[\"dOnbMlULVTsnIkh3QlEycnc00YZ+6/Y2oshR5g0s5vch5hMayfb35khSTdKMEDh4QZcK1xXQijvqTV2Hbls6twE=\"]}"
+    decoder := cosmosutils.DefaultDecoder
+
+    tx, err := decoder.DecodeBase64(anyDirectSignedTx)
+    assert.NoError(t, err)
+
+    actual, err := tx.MarshalToJSON()
+    assert.NoError(t, err)
+    assert.Equal(t, expected, string(actual))
+}
+
 func TestDecodeIBCBase64Tx(t *testing.T) {
     decoder := cosmosutils.DefaultDecoder
     //https://www.mintscan.io/cosmos/txs/E3944CB1AF60EB1649B2DC9EBB6C67FFCCE17C6E44259417F4C4A657D9206B6E
