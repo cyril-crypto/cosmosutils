@@ -151,8 +151,8 @@ github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46t
 github.com/creachadair/taskgroup v0.3.2 h1:zlfutDS+5XG40AOxcHDSThxKzns8Tnr9jnr6VqkYlkM=
 github.com/crypto-org-chain/chain-main/v3 v3.3.9 h1:ccBRPX1mVnmnAw3tp8+j7RY1hdRPqokr7j6eXBzV/48=
 github.com/crypto-org-chain/chain-main/v3 v3.3.9/go.mod h1:TebCI9eSKs2Y23mLGDpREOM4TwaTDWjt4iYlghngRls=
-github.com/crypto-org-chain/cronos v0.8.0-gravity-alpha3-patch h1:YFo9c14wENT6s9w73+pFQgiXR/r6vq7d08ZbJ4itTuQ=
-github.com/crypto-org-chain/cronos v0.8.0-gravity-alpha3-patch/go.mod h1:rNk/oGIlr/M8gFtRLn0CgDwVwYxhGXXna9zrK5594kw=
+github.com/crypto-org-chain/cronos v0.9.0-beta2.0.20221216021728-4dfed14d309f h1:UksIM26RbhJh+fcWbBnyOkWjlN+YsHwV9BJnG/MqsQo=
+github.com/crypto-org-chain/cronos v0.9.0-beta2.0.20221216021728-4dfed14d309f/go.mod h1:ypcnb+uU0w5QSRjCWTvoSjuJXBNP6V6q85t4Ai0MSZw=
 github.com/crypto-org-chain/gravity-bridge/module/v2 v2.0.1-0.20221027085649-2107c6bd6bc4 h1:UfwZ1lEmwjSCpD1evO6xmZz+vqwiFkdoFyqjM3lqxWc=
 github.com/crypto-org-chain/gravity-bridge/module/v2 v2.0.1-0.20221027085649-2107c6bd6bc4/go.mod h1:GOp2vh3+S6TgLguiTVxrhCioiEQ5yWVx4vVbykwo030=
 github.com/danieljoos/wincred v1.1.2 h1:QLdCxFs1/Yl4zduvBdcHB8goaYk9RARS2SgLLRuAyr0=

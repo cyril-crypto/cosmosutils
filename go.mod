@@ -7,7 +7,7 @@ require (
 	github.com/cosmos/cosmos-sdk v0.46.4
 	github.com/cosmos/ibc-go/v5 v5.1.0
 	github.com/crypto-org-chain/chain-main/v3 v3.3.9
-	github.com/crypto-org-chain/cronos v0.8.0-gravity-alpha3-patch
+	github.com/crypto-org-chain/cronos v0.9.0-beta2.0.20221216021728-4dfed14d309f
 	github.com/evmos/ethermint v0.6.1-0.20221003153722-491c3da7ebd7
 	github.com/peggyjv/gravity-bridge/module/v2 v2.0.0-20220420162017-838c0d25e974
 	github.com/stretchr/testify v1.8.0
