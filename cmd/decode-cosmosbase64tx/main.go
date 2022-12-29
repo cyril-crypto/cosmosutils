@@ -22,6 +22,7 @@ func main() {
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "Error: Invalid transaction")
 		printUsage(os.Stderr)
+		print(err.Error())
 		os.Exit(1)
 	}
 
