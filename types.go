@@ -12,6 +12,7 @@ import (
 	evidencetypes "github.com/cosmos/cosmos-sdk/x/evidence/types"
 	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	govbetatypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
@@ -54,4 +55,5 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	authztypes.RegisterInterfaces(interfaceRegistry)
 	feegranttypes.RegisterInterfaces(interfaceRegistry)
 	govtypes.RegisterInterfaces(interfaceRegistry)
+	govbetatypes.RegisterInterfaces(interfaceRegistry)
 }
