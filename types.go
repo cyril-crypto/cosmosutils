@@ -13,6 +13,7 @@ import (
 	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	govbetatypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	grouptypes "github.com/cosmos/cosmos-sdk/x/group"
 	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
@@ -42,6 +43,7 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	evidencetypes.RegisterInterfaces(interfaceRegistry)
 	ethermintcodextypes.RegisterInterfaces(interfaceRegistry)
 	gravitytypes.RegisterInterfaces(interfaceRegistry)
+	grouptypes.RegisterInterfaces(interfaceRegistry)
 	proposal.RegisterInterfaces(interfaceRegistry)
 	slashingtypes.RegisterInterfaces(interfaceRegistry)
 	stakingtypes.RegisterInterfaces(interfaceRegistry)
