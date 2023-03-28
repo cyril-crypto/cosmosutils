@@ -25,6 +25,7 @@ import (
 	nfttypes "github.com/crypto-org-chain/chain-main/v3/x/nft/types"
 	cronostypes "github.com/crypto-org-chain/cronos/x/cronos/types"
 	ethermintcodextypes "github.com/evmos/ethermint/crypto/codec"
+	enccodec "github.com/evmos/ethermint/encoding/codec"
 	etherminttypes "github.com/evmos/ethermint/x/evm/types"
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 	gravitytypes "github.com/peggyjv/gravity-bridge/module/v2/x/gravity/types"
@@ -58,4 +59,5 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	feegranttypes.RegisterInterfaces(interfaceRegistry)
 	govtypes.RegisterInterfaces(interfaceRegistry)
 	govbetatypes.RegisterInterfaces(interfaceRegistry)
+	enccodec.RegisterInterfaces(interfaceRegistry)
 }
